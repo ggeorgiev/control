@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E77599314326D4D00B5A8DF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E77599214326D4D00B5A8DF /* main.cpp */; };
-		5E77599514326D4D00B5A8DF /* control.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5E77599414326D4D00B5A8DF /* control.1 */; };
+		5E13AB0F14327FF2005F7F7D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E13AB0E14327FF2005F7F7D /* main.cpp */; };
 		5E7759A014326F1700B5A8DF /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E77599F14326F1600B5A8DF /* GLUT.framework */; };
 		5E7759A214326F2B00B5A8DF /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7759A114326F2B00B5A8DF /* OpenGL.framework */; };
 		5E7759A414326F3A00B5A8DF /* OpenCL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E7759A314326F3A00B5A8DF /* OpenCL.framework */; };
@@ -21,16 +20,15 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				5E77599514326D4D00B5A8DF /* control.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E13AB0D14327FF2005F7F7D /* control.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = control.1; sourceTree = "<group>"; };
+		5E13AB0E14327FF2005F7F7D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		5E77598E14326D4D00B5A8DF /* control */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = control; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E77599214326D4D00B5A8DF /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		5E77599414326D4D00B5A8DF /* control.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = control.1; sourceTree = "<group>"; };
 		5E77599F14326F1600B5A8DF /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		5E7759A114326F2B00B5A8DF /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		5E7759A314326F3A00B5A8DF /* OpenCL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenCL.framework; path = /System/Library/Frameworks/OpenCL.framework; sourceTree = "<absolute>"; };
@@ -50,12 +48,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E13AB0C14327FF2005F7F7D /* src */ = {
+			isa = PBXGroup;
+			children = (
+				5E13AB0D14327FF2005F7F7D /* control.1 */,
+				5E13AB0E14327FF2005F7F7D /* main.cpp */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = "<group>";
+		};
 		5E77598314326D4D00B5A8DF = {
 			isa = PBXGroup;
 			children = (
-				5E7759A514326F4300B5A8DF /* Frameworks */,
-				5E77599114326D4D00B5A8DF /* control */,
+				5E13AB0C14327FF2005F7F7D /* src */,
 				5E77598F14326D4D00B5A8DF /* Products */,
+				5E7759A514326F4300B5A8DF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,15 +73,6 @@
 				5E77598E14326D4D00B5A8DF /* control */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5E77599114326D4D00B5A8DF /* control */ = {
-			isa = PBXGroup;
-			children = (
-				5E77599214326D4D00B5A8DF /* main.cpp */,
-				5E77599414326D4D00B5A8DF /* control.1 */,
-			);
-			path = control;
 			sourceTree = "<group>";
 		};
 		5E7759A514326F4300B5A8DF /* Frameworks */ = {
@@ -133,7 +132,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E77599314326D4D00B5A8DF /* main.cpp in Sources */,
+				5E13AB0F14327FF2005F7F7D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +217,7 @@
 				5E77599A14326D4D00B5A8DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
